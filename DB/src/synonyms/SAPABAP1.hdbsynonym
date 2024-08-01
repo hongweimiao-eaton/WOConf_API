@@ -1,20 +1,20 @@
 {
-  "WOConf_API_API.DB.synonyms::AFRU": {
+  "WOConf_API.DB.synonyms::AFRU": {
     "target": {
       "object": "/BIC/AZPP_AD102",
       "schema": "SAPABAP1"
     }
   },
-  "WOConf_API_API.DB.synonyms::AFVC": {
+  "WOConf_API.DB.synonyms::AFVC": {
     "target": {
       "object": "/BIC/AZPP_AD082",
       "schema": "SAPABAP1"
     }
   },
-  "WOConf_API_API.DB.synonyms::T430": {
+  "WOConf_API.DB.synonyms::T430": {
     "target": {
       "object": "/BIC/AZPP_AD202",
       "schema": "SAPABAP1"
     }
   }
-}
+} 

@@ -1,0 +1,40 @@
+namespace DB.models;
+
+using "DB.models::WOConf" as WOC;
+
+context WOConfAPI {
+ define view WOConfirm as
+        select from WOC as W
+        {
+        	key "W"."AUFPL" as Aufpl,
+        	key "W"."APLZL" as Aplzl,
+        	key "W"."RUECK" as Rueck,
+        	key "W"."RMZHL" as Rmzhl,
+        	"W"."ERSDA" as Ersda,
+        	"W"."BUDAT" as Budat,
+        	"W"."WERKS" as Werks,
+        	"W"."GMNGA" as Gmnga,
+        	"W"."XMNGA" as Xmnga,
+        	"W"."RMNGA" as Rmnga,
+        	"W"."GMEIN" as Gmein,
+        	"W"."MEINH" as Meinh,
+        	"W"."ISDD" as Isdd,
+        	"W"."ISDZ" as Isdz,
+        	"W"."IEDD" as Iedd,
+        	"W"."IEDZ" as Iedz,
+        	"W"."AUERU" as Aueru,
+        	"W"."MANUR" as Manur,
+        	"W"."MEILR" as Meilr,
+        	"W"."AUFNR" as Aufnr,
+        	"W"."VORNR" as Vornr,
+        	"W"."SMENG" as Smeng,
+        	"W"."STZHL" as Stzhl,
+        	"W"."STOKZ" as Stokz,
+        	"W"."STEUS" as Steus,
+        	"W"."KTSCH" as Ktsch,
+        	"W"."LTXA1" as Ltxa1,
+        	"W"."AUTWE" as Autme,
+        	"W"."RUEK" as Ruek
+        	
+        };
+};
