@@ -1,0 +1,36 @@
+{
+	"xsappname": "WOConf_API",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    	{
+	    "name": "$XSAPPNAME.Display",
+    	"description": "display role"
+    },
+     {
+      "name": "$XSAPPNAME.USER",
+      "description": "User role"
+    },
+   	{
+		"name": "uaa.user",
+		"description": "uaa.user"
+	}
+  ],
+  "role-templates": 
+   [
+		 {
+	      "name": "Token_Exchange",
+	      "description": "UAA",
+	      "scope-references": [
+	        "uaa.user",
+	       "xs_authorization.read"
+	      ]
+	    },{
+			"name": "Viewer",
+			"description": "View all records",
+			"scope-references": [
+				"$XSAPPNAME.Display",
+				"$XSAPPNAME.USER"
+			]
+		  }	
+   ]
+}
